@@ -1,4 +1,4 @@
-/* css good pratices always reset the margin / padding to 0 and give a safe well supported default font */
+/* css good practices always reset the margin / padding to 0 and give a safe well supported default font */
 * {
     /* margin: 0 ; */
     /* padding: 0; */
@@ -142,9 +142,16 @@ justify-content: center;
     background: radial-gradient(rgb(255, 255, 255) , rgba(211, 211, 211, 0.658));
     box-shadow: 0 0 5px;   
 }
+.social-media{ 
+    display:flex;
+    gap: 0.5em;
+    justify-content: center;
+    justify-items: center;
+    
+}
 /* end footer */
 
-/* responsivness for mobile devices never forget it */
+/* responsiveness for mobile devices never forget it */
 @media screen and (max-width : 500px){
     .nav-bar{
 
