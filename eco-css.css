@@ -135,16 +135,15 @@ justify-content: center;
 
 
 .google-map {
-    padding-bottom: 50%;
-    position: relative;
+    padding-bottom: 1rem;
+    
 }
 
 .google-map iframe {
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 /* cards end  */
 /*main section end */  
