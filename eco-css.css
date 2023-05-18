@@ -4,12 +4,14 @@
     /* padding: 0; */
     /* box-sizing: border-box; */
 }
-body{
+
+body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
     min-height: 100vh;
 }
+
 /* start navigation bar  */
 .nav-bar {
     display: flex;
@@ -21,32 +23,36 @@ body{
     top: 0;
     box-shadow: 0 0 5px;
 }
-#hero{
-    padding: 10px 10px 10px 10px ;
-    margin : 0;
+
+#hero {
+    padding: 10px 10px 10px 10px;
+    margin: 0;
     font-weight: bolder;
 }
-#hero:hover{
+
+#hero:hover {
     transition: 700ms;
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
-.nav-snipet{
-    display :flex;
+
+.nav-snipet {
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
+
 .nav-snipet a {
-text-decoration: none;
-color:white;
-text-shadow:  1px 1px 1px  black;
-font-size: 1.1em;
-padding-right: 0.5em;
-cursor: pointer;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.1em;
+    padding-right: 0.5em;
+    cursor: pointer;
 }
 
-.nav-bar input{
-    margin: 0.5em ;
+.nav-bar input {
+    margin: 0.5em;
     padding: 0.8rem;
     border-radius: 1rem;
     border: none;
@@ -54,47 +60,53 @@ cursor: pointer;
     font-size: 1em;
     background-color: blanchedalmond;
 }
+
 /* end navigation bar */
-.head-main{
-    background: linear-gradient(white,rgba(212, 212, 212, 0.705));
-    
+.head-main {
+    background: linear-gradient(white, rgba(212, 212, 212, 0.705));
+
 }
+
 /* start header  */
 
-header{
+header {
     display: flex;
     justify-content: center;
-    justify-items: center; 
+    justify-items: center;
     flex-direction: column;
     margin-top: 1em;
-    }
-
-header h1{
-    text-align: center;    
 }
-header div{
+
+header h1 {
+    text-align: center;
+}
+
+header div {
     display: flex;
     justify-content: center;
-    justify-items: center; 
+    justify-items: center;
 }
-header div button{
-    padding: 0.5em ; 
+
+header div button {
+    padding: 0.5em;
     border: none;
     border-radius: 1em;
     cursor: pointer;
-}   
-/*  end header */ 
+}
+
+/*  end header */
 
 /* main section start */
-.main-section{
+.main-section {
     margin-top: 1rem;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-items: center;
     justify-content: center;
 }
+
 /* cards start  */
-.cards-container{
+.cards-container {
     margin: 2em 0em 2em 0em;
     display: flex;
     column-gap: 2em;
@@ -103,71 +115,81 @@ header div button{
     justify-items: center;
     justify-content: center;
 }
+
 /* .card{
         
 } */
-.card-img{
+.card-img {
     box-sizing: border-box;
 }
-.card-header{
+
+.card-header {
     display: flex;
     flex-wrap: wrap;
-    justify-items:center;
-    justify-content:space-around;
+    justify-items: center;
+    justify-content: space-around;
 }
-.card-body{
+
+.card-body {
     margin-top: -1em;
     padding-left: 1em;
 }
-.video-container{
+
+.video-container {
     display: flex;
-width:100%;
-height: 300px;
-margin-bottom: 2em;
-margin-top : 2em;
-justify-items: center;
-justify-content: center;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    justify-items: center;
+    justify-content: center;
 
 }
-.iframe{
-    width :200px; 
+
+.iframe {
+    width: 200px;
     border-radius: 1em;
 }
 
-
 .google-map {
     padding-bottom: 1rem;
-    
+
 }
 
-.google-map iframe {
-
-    
+.visit {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
 }
+
+.google-map iframe {}
+
 /* cards end  */
-/*main section end */  
+/*main section end */
 /* start footer */
 
-.footer{
-    display:flex;
+.footer {
+    display: flex;
     justify-content: space-around;
     justify-items: center;
-    background: radial-gradient(rgb(255, 255, 255) , rgba(211, 211, 211, 0.658));
-    box-shadow: 0 0 5px;   
+    background: radial-gradient(rgb(255, 255, 255), rgba(211, 211, 211, 0.658));
+    box-shadow: 0 0 5px;
 }
-.social-media{ 
-    display:flex;
+
+.social-media {
+    display: flex;
     gap: 0.5em;
     justify-content: center;
     justify-items: center;
-    
+
 }
+
 /* end footer */
 
 /* responsiveness for mobile devices never forget it */
-@media screen and (max-width : 500px){
-    .nav-bar{
+@media screen and (max-width : 500px) {
+    .nav-bar {
 
         padding: 0.5em;
-     }
+    }
 }
