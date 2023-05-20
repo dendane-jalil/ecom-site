@@ -119,8 +119,10 @@ header div button {
 /* .card{
         
 } */
-.card-img {
+.card img {
     box-sizing: border-box;
+    width: 17em;
+    height: 20em
 }
 
 .card-header {
