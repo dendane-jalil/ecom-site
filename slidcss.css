@@ -1,0 +1,260 @@
+/* css good practices always reset the margin / padding to 0 and give a safe well supported default font */
+* {
+    /* margin: 0 ; */
+    /* padding: 0; */
+    /* box-sizing: border-box; */
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* loader start */
+.loader-container {
+    box-sizing: border-box;
+    /* position: fixed; */
+    display: flex;
+    justify-content: center;
+    background: #e2e4ef6a;
+    align-items: center;
+    z-index: 1;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 10px ridge;
+    border-color: #efa510 transparent #fd7600 transparent;
+    border-radius: 45%;
+    animation: spin-anim 0.8s backwards infinite;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* loader end  */
+
+/* start navigation bar  */
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2em;
+    position: sticky;
+    background-color: orange;
+    top: 0;
+    box-shadow: 0 0 5px;
+}
+
+#hero {
+    padding: 10px 10px 10px 10px;
+    margin: 0;
+    font-weight: bolder;
+}
+
+#hero:hover {
+    transition: 700ms;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.nav-snipet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav-snipet a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.2em;
+    padding-right: 0.5em;
+    cursor: pointer;
+}
+
+.nav-bar input {
+    margin: 0.5em;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    background-color: blanchedalmond;
+}
+
+/* end navigation bar */
+.head-main {
+    background: linear-gradient(white, rgb(231, 230, 230));
+
+}
+
+/* start header  */
+
+header {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+header div button {
+    padding: 0.5em;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+/*  end header */
+
+/* main section start */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    background: radial-gradient(rgb(255, 255, 255), rgba(211, 211, 211, 0.658));
+    box-shadow: 0 0 5px;
+}
+
+.social-media {
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+/* end footer */
+
+/* responsiveness for mobile devices never forget it */
+@media screen and (max-width : 500px) {
+    .nav-bar {
+
+        padding: 0.5em;
+    }
+}
+
+.slider-maincont {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+.slideshow-container {
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+    /* margin-top: 5em; */
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(177, 161, 161);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(32, 29, 29, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    /* position: absolute;
+    top: 0; */
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .2
+    }
+
+    to {
+        opacity: 1
+    }
+}
