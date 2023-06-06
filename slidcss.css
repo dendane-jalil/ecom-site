@@ -250,8 +250,12 @@ header div button {
     animation-duration: 0.5s;
 }
 
+
 img {
-    object-fit: cover;
+
+    box-sizing: border-box;
+    width: 25em;
+    height: 30em;
 }
 
 @keyframes fade {
