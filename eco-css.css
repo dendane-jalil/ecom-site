@@ -84,6 +84,12 @@ body {
     cursor: pointer;
 }
 
+.nav-snipet a:hover {
+    text-decoration: none;
+    color: rgb(19, 17, 17);
+    text-shadow: 1px 1px 1px black;
+}
+
 .nav-bar input {
     margin: 0.5em;
     padding: 0.8rem;
